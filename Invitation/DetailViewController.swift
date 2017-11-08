@@ -106,8 +106,8 @@ class DetailViewController: UIViewController ,NavigationConfigurationProtocol{
                if let _ = self.tableViewDetail.tableFooterView{
                     self.tableViewDetail.tableFooterView = self.tableViewFooter
                }
-          let titles:[String] = ["On SRK's birthday","Venue"]
-          let subTitles:[String] = ["02-11-2017","Domino's Pizza ISCON 23.0276° N, 72.5084° E"]
+          let titles:[String] = ["On friday evening","Venue"]
+          let subTitles:[String] = ["10-11-2017","Domino's Pizza ISCON 23.0276° N, 72.5084° E"]
           
           for i in 0 ..< titles.count {
                dataModels.append(TableViewDataModel(title: "\(titles[i])", subTitle: "\(subTitles[i])"))
@@ -170,6 +170,7 @@ class DetailViewController: UIViewController ,NavigationConfigurationProtocol{
      // MARK: - Selector Methods
      @IBAction func buttonUserSelection(sender:UIButton!){
           if let objectViewController = self.storyboard?.instantiateViewController(withIdentifier: "ViewController") as? ViewController{
+               objectViewController.objectFriendName = self.detailFriendName
                let objectNavigation = UINavigationController(rootViewController: objectViewController)
                objectNavigation.modalPresentationStyle = .popover
                objectNavigation.isNavigationBarHidden = true

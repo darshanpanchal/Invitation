@@ -22,6 +22,7 @@
 		4922368B1FA33551002B6AFD /* CommonClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4922368A1FA33551002B6AFD /* CommonClass.swift */; };
 		492236A91FA35BEB002B6AFD /* muli-regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 492236A81FA35339002B6AFD /* muli-regular.otf */; };
 		492236AB1FA35C60002B6AFD /* IndieFlower.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 492236AA1FA35C60002B6AFD /* IndieFlower.ttf */; };
+		49B2FC931FAB1FFF0001AD48 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B2FC921FAB1FFF0001AD48 /* Configuration.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		4922368A1FA33551002B6AFD /* CommonClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonClass.swift; sourceTree = "<group>"; };
 		492236A81FA35339002B6AFD /* muli-regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "muli-regular.otf"; sourceTree = "<group>"; };
 		492236AA1FA35C60002B6AFD /* IndieFlower.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = IndieFlower.ttf; sourceTree = "<group>"; };
+		49B2FC921FAB1FFF0001AD48 /* Configuration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 		492236451FA2EA49002B6AFD = {
 			isa = PBXGroup;
 			children = (
+				49B2FC921FAB1FFF0001AD48 /* Configuration.swift */,
 				492236501FA2EA49002B6AFD /* Invitation */,
 				492236651FA2EA4A002B6AFD /* InvitationTests */,
 				492236701FA2EA4A002B6AFD /* InvitationUITests */,
@@ -305,6 +308,7 @@
 			files = (
 				492236541FA2EA49002B6AFD /* ViewController.swift in Sources */,
 				492236881FA32E6A002B6AFD /* HomeTableViewCell.swift in Sources */,
+				49B2FC931FAB1FFF0001AD48 /* Configuration.swift in Sources */,
 				492236801FA2EB06002B6AFD /* InvitationHomeViewController.swift in Sources */,
 				492236851FA32715002B6AFD /* DetailViewController.swift in Sources */,
 				492236521FA2EA49002B6AFD /* AppDelegate.swift in Sources */,
@@ -363,7 +367,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		492236741FA2EA4A002B6AFD /* Debug */ = {
+		492236741FA2EA4A002B6AFD /* Debug (Staging) */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -414,7 +418,7 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
-			name = Debug;
+			name = "Debug (Staging)";
 		};
 		492236751FA2EA4A002B6AFD /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -462,7 +466,7 @@
 			};
 			name = Release;
 		};
-		492236771FA2EA4A002B6AFD /* Debug */ = {
+		492236771FA2EA4A002B6AFD /* Debug (Staging) */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -472,7 +476,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
-			name = Debug;
+			name = "Debug (Staging)";
 		};
 		492236781FA2EA4A002B6AFD /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -486,7 +490,7 @@
 			};
 			name = Release;
 		};
-		4922367A1FA2EA4A002B6AFD /* Debug */ = {
+		4922367A1FA2EA4A002B6AFD /* Debug (Staging) */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -498,7 +502,7 @@
 				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Invitation.app/Invitation";
 			};
-			name = Debug;
+			name = "Debug (Staging)";
 		};
 		4922367B1FA2EA4A002B6AFD /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -514,7 +518,7 @@
 			};
 			name = Release;
 		};
-		4922367D1FA2EA4A002B6AFD /* Debug */ = {
+		4922367D1FA2EA4A002B6AFD /* Debug (Staging) */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -525,7 +529,7 @@
 				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = Invitation;
 			};
-			name = Debug;
+			name = "Debug (Staging)";
 		};
 		4922367E1FA2EA4A002B6AFD /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -540,13 +544,106 @@
 			};
 			name = Release;
 		};
+		49B2FC8E1FAB17ED0001AD48 /* Debug (Production) */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IBC_COMPILER_AUTO_ACTIVATE_CUSTOM_FONTS = YES;
+				IBSC_COMPILER_AUTO_ACTIVATE_CUSTOM_FONTS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = "Debug (Production)";
+		};
+		49B2FC8F1FAB17ED0001AD48 /* Debug (Production) */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Invitation/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tatvasoft.Invitation;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = "Debug (Production)";
+		};
+		49B2FC901FAB17ED0001AD48 /* Debug (Production) */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = InvitationTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tatvasoft.InvitationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Invitation.app/Invitation";
+			};
+			name = "Debug (Production)";
+		};
+		49B2FC911FAB17ED0001AD48 /* Debug (Production) */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = InvitationUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tatvasoft.InvitationUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Invitation;
+			};
+			name = "Debug (Production)";
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
 		492236491FA2EA49002B6AFD /* Build configuration list for PBXProject "Invitation" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				492236741FA2EA4A002B6AFD /* Debug */,
+				492236741FA2EA4A002B6AFD /* Debug (Staging) */,
+				49B2FC8E1FAB17ED0001AD48 /* Debug (Production) */,
 				492236751FA2EA4A002B6AFD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -555,7 +652,8 @@
 		492236761FA2EA4A002B6AFD /* Build configuration list for PBXNativeTarget "Invitation" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				492236771FA2EA4A002B6AFD /* Debug */,
+				492236771FA2EA4A002B6AFD /* Debug (Staging) */,
+				49B2FC8F1FAB17ED0001AD48 /* Debug (Production) */,
 				492236781FA2EA4A002B6AFD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -564,7 +662,8 @@
 		492236791FA2EA4A002B6AFD /* Build configuration list for PBXNativeTarget "InvitationTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4922367A1FA2EA4A002B6AFD /* Debug */,
+				4922367A1FA2EA4A002B6AFD /* Debug (Staging) */,
+				49B2FC901FAB17ED0001AD48 /* Debug (Production) */,
 				4922367B1FA2EA4A002B6AFD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -573,7 +672,8 @@
 		4922367C1FA2EA4A002B6AFD /* Build configuration list for PBXNativeTarget "InvitationUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4922367D1FA2EA4A002B6AFD /* Debug */,
+				4922367D1FA2EA4A002B6AFD /* Debug (Staging) */,
+				49B2FC911FAB17ED0001AD48 /* Debug (Production) */,
 				4922367E1FA2EA4A002B6AFD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;

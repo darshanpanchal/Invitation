@@ -14,6 +14,7 @@ enum FriendName {
      case janki
      case banu
      case neel
+     case giteeka
 }
 
 struct TableViewDataModel {
@@ -34,6 +35,9 @@ class InvitationHomeViewController: UIViewController,NavigationConfigurationProt
         super.viewDidLoad()
         // Do any additional setup after loading the view.
           //self.performSegue(withIdentifier: "pushToDetail", sender: nil)
+          
+          var objectConfiguration = Configuration()
+          print(objectConfiguration.environment)
           
           self.friendName = .sonal
         //Configure NavigationTitle
@@ -66,6 +70,8 @@ class InvitationHomeViewController: UIViewController,NavigationConfigurationProt
                return "#maharana pratap's FAN #kansagara sister 2 #positive thinker #girl who know me most"
           case .neel :
                return "#brother as well #schoolmates #best friends #together we can do more"
+          case .giteeka :
+               return "No matter how hard time we face in our friendship but u were,u r & u will be my ever close friend."
           }
      }
      func configureTableView(){

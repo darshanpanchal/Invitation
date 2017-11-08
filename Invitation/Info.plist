@@ -2,16 +2,8 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-     <key>NSLocationAlwaysUsageDescription</key>
-     <string>App will Use LocationService</string>
-     <key>NSLocationWhenInUseUsageDescription</key>
-     <string>App will Use LocationService</string>
-     <key>UIViewControllerBasedStatusBarAppearance</key>
-     <false/>
-     <key>UIStatusBarStyle</key>
-     <string>UIStatusbarStyleLightContent</string>
-     <key>UIStatusBarHidden</key>
-     <false/>
+     <key>Configuration</key>
+     <string>$(CONFIGURATION)</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleExecutable</key>
@@ -30,20 +22,28 @@
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>App will Use LocationService</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>App will Use LocationService</string>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Muli-Bold.ttf</string>
+		<string>muli-regular.otf</string>
+		<string>IndieFlower.ttf</string>
+	</array>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
-	<string>Main</string>
-	<key>UIAppFonts</key>
-	<array>
-          <string>Muli-Bold.ttf</string>
-		<string>muli-regular.otf</string>
-          <string>IndieFlower.ttf</string>
-	</array>
+	<string>Main</string>    
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>
 	</array>
+	<key>UIStatusBarHidden</key>
+	<false/>
+	<key>UIStatusBarStyle</key>
+	<string>UIStatusbarStyleLightContent</string>
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
@@ -57,5 +57,7 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>UIViewControllerBasedStatusBarAppearance</key>
+	<false/>
 </dict>
 </plist>

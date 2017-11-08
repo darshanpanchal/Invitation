@@ -12,12 +12,15 @@ class ViewController: UIViewController {
 
      @IBOutlet weak var objectUIImageView:UIImageView!
      
-     var imageObject:UIImage = UIImage(named:"User")!
      
+     var objectFriendName:FriendName = .sonal
      override func viewDidLoad() {
           super.viewDidLoad()
           // Do any additional setup after loading the view, typically from a nib.
-          self.objectUIImageView.image = imageObject
+          if let objectUIImage = UIImage(named:"\(self.objectFriendName)"){
+               self.objectUIImageView.image = objectUIImage
+          }
+          
      }
      override func didReceiveMemoryWarning() {
           super.didReceiveMemoryWarning()
