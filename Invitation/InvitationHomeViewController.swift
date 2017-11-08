@@ -39,7 +39,7 @@ class InvitationHomeViewController: UIViewController,NavigationConfigurationProt
           var objectConfiguration = Configuration()
           print(objectConfiguration.environment)
           
-          self.friendName = .sonal
+          self.friendName = .giteeka
         //Configure NavigationTitle
         self.configureNavigationTitle(strTitle: "adios tatvasoft")
           
@@ -83,7 +83,7 @@ class InvitationHomeViewController: UIViewController,NavigationConfigurationProt
      }
      func configureTableViewModel(){
           let titles:[String] = ["Tatvasoft Journey","Few words for you","Farewell Invitation"]
-          let subTitles:[String] = ["#Story began on 20-july-2015 @ ISCON Elegance #Mobile Development #iOS developer#Friends and supportive seniors #learning curve on it's edge #it's time to final bye","for me \(self.friendName) is \(self.getFriendMessage())","let's celebarate together @Domino's Pizza ISCON and make it auspicious"]
+          let subTitles:[String] = ["#Story began on 20-july-2015 @ ISCON Elegance #Mobile Development #iOS developer#Friends and supportive seniors #learning curve on it's edge #it's time to final bye","=== \(self.friendName) === \n \(self.getFriendMessage())","let's celebarate together @Domino's Pizza ISCON and make it auspicious"]
           for i in 0..<3{
               tableViewObjects.append(TableViewDataModel(title: titles[i], subTitle: subTitles[i]))
           }
@@ -130,7 +130,7 @@ extension InvitationHomeViewController:UITableViewDelegate,UITableViewDataSource
                     cell.strSubTitle.alpha = 1.0
                })
                if cell.tag == 2{
-                    DispatchQueue.main.asyncAfter(deadline: .now()+2.0, execute: { 
+                    DispatchQueue.main.asyncAfter(deadline: .now()+3.5, execute: {
                          self.performSegue(withIdentifier: "PresentDetail", sender: nil)
                     })
                }

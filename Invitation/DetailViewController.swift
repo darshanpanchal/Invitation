@@ -107,7 +107,7 @@ class DetailViewController: UIViewController ,NavigationConfigurationProtocol{
                     self.tableViewDetail.tableFooterView = self.tableViewFooter
                }
           let titles:[String] = ["On friday evening","Venue"]
-          let subTitles:[String] = ["10-11-2017","Domino's Pizza ISCON 23.0276° N, 72.5084° E"]
+          let subTitles:[String] = ["10-11-2017 07:00 pm","Domino's Pizza ISCON 23.0276° N, 72.5084° E"]
           
           for i in 0 ..< titles.count {
                dataModels.append(TableViewDataModel(title: "\(titles[i])", subTitle: "\(subTitles[i])"))
