@@ -20,7 +20,6 @@ class ViewController: UIViewController {
           if let objectUIImage = UIImage(named:"\(self.objectFriendName)"){
                self.objectUIImageView.image = objectUIImage
           }
-          
      }
      override func didReceiveMemoryWarning() {
           super.didReceiveMemoryWarning()

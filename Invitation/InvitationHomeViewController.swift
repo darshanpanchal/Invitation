@@ -13,7 +13,7 @@ enum FriendName {
      case chirag
      case janki
      case banu
-     case neel
+     case Neel
      case giteeka
 }
 
@@ -39,7 +39,7 @@ class InvitationHomeViewController: UIViewController,NavigationConfigurationProt
           var objectConfiguration = Configuration()
           print(objectConfiguration.environment)
           
-          self.friendName = .giteeka
+          self.friendName = .Neel
         //Configure NavigationTitle
         self.configureNavigationTitle(strTitle: "adios tatvasoft")
           
@@ -68,7 +68,7 @@ class InvitationHomeViewController: UIViewController,NavigationConfigurationProt
                return "#kansagara sister 1#chapli #beautiful girl #great human being #difficult smile #pics lover"
           case .banu :
                return "#maharana pratap's FAN #kansagara sister 2 #positive thinker #girl who know me most"
-          case .neel :
+          case .Neel :
                return "#brother as well #schoolmates #best friends #together we can do more"
           case .giteeka :
                return "No matter how hard time we face in our friendship but u were,u r & u will be my ever close friend."

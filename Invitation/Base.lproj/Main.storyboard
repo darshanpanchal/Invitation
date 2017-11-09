@@ -171,14 +171,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1ry-Gk-dVF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4243.1999999999998" y="-596.40179910044981"/>
+            <point key="canvasLocation" x="2536" y="-587"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="mJx-J8-x2j">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="kbv-bt-7ih" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="HYf-kd-xH5">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="HYf-kd-xH5">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
